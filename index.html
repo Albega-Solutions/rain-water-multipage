@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Water Holidays | Your Trusted Travel Partner</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar (Optional, like Coastline) -->
+    <div class="bg-primary text-white py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="small">
+                <i class="fa-solid fa-phone me-2"></i> +1 (800) 123-4567 | <i class="fa-solid fa-envelope ms-3 me-2"></i> info@rainwaterholidays.com
+            </div>
+            <div class="social-links small">
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm transition-all" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-3 d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-umbrella-beach me-2"></i>
+                <span>Rain Water <span class="text-dark">Holidays</span></span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-4 text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Packages
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="packagesDropdown">
+                            <li><a class="dropdown-item" href="packages.html">General Packages</a></li>
+                            <li><a class="dropdown-item" href="custom-package.html">Custom Itinerary</a></li>
+                            <li><a class="dropdown-item" href="packages.html">Student Packages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="#">Blogs</a></li>
+                            <li><a class="dropdown-item" href="about-us.html#gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link text-primary fw-bold" href="#"><i class="fa-solid fa-user me-1"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative d-flex align-items-center" style="background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; height: 80vh; min-height: 500px;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4);"></div>
+        <div class="container position-relative z-index-2 text-white">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4 slide-up">Explore the World with<br><span class="text-info">Rain Water Holidays</span></h1>
+                    <p class="lead mb-5 slide-up-delay fs-4 fw-light">25 years old company with excellence in creating cherishing memories.</p>
+                    <div class="d-flex gap-3 slide-up-delay-2">
+                        <a href="packages.html" class="btn btn-primary btn-lg rounded-pill px-4 fw-semibold shadow">Explore Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glimpse Section (Video Thumbnails like Coastline) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-6">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-sm video-thumb">
+                        <img src="https://images.unsplash.com/photo-1504280390224-345373a6285d?auto=format&fit=crop&w=400&q=80" alt="Video" class="w-100 object-fit-cover" style="height: 150px;">
+                        <div class="position-absolute top-50 start-50 translate-middle text-white fs-2"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-sm video-thumb">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=400&q=80" alt="Video" class="w-100 object-fit-cover" style="height: 150px;">
+                        <div class="position-absolute top-50 start-50 translate-middle text-white fs-2"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-sm video-thumb">
+                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=400&q=80" alt="Video" class="w-100 object-fit-cover" style="height: 150px;">
+                        <div class="position-absolute top-50 start-50 translate-middle text-white fs-2"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-sm video-thumb">
+                        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=400&q=80" alt="Video" class="w-100 object-fit-cover" style="height: 150px;">
+                        <div class="position-absolute top-50 start-50 translate-middle text-white fs-2"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Begin Your New Life Experience (About Snippet) -->
+    <section class="py-5">
+        <div class="container py-4 text-center">
+            <h2 class="display-5 fw-bold mb-4 text-dark">Begin Your New Life Experience</h2>
+            <p class="text-muted fs-5 mx-auto" style="max-width: 800px;">
+                Tour packages tailored for unforgettable journeys — that’s what we offer at Rain Water Holidays. Start your journey of discovery and adventure with us. We specialize in creating personalized travel experiences that connect you with breathtaking destinations and vibrant cultures. Ready to learn more about who we are and what we do?
+            </p>
+            <div class="mt-4 d-flex justify-content-center gap-3">
+                <a href="about-us.html" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-medium">About Us</a>
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-medium"><i class="fa-solid fa-download me-2"></i>Our brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Your Dream Journey Today (Contact CTA Banner) -->
+    <section class="py-5 bg-primary text-white text-center position-relative" style="background-image: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), url('https://images.unsplash.com/photo-1512343879784-a960bf40e4f2?auto=format&fit=crop&w=1920&q=80'); background-attachment: fixed; background-size: cover;">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold mb-3">Start Your Dream Journey Today!</h2>
+            <p class="fs-5 mb-4">Explore the World with Rain Water Holidays. Book now for exceptional service and unforgettable experiences. Click here to start your adventure!</p>
+            <a href="contact-us.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Explore Our Packages -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">Explore Our Packages</h2>
+                <p class="text-muted fs-5">Discover the perfect travel experience with our curated packages, designed to cater to a variety of interests and preferences.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">5 Nights / 6 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Luxury Eco-Resort Package</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 51,500</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1589394815804-964ce0ff9657?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">3 Nights / 4 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Essence of Coastal Bliss</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 13,550</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">2 Nights / 3 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Compact Mountain Tour</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 8,250</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Package 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">9 Nights / 10 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Way to Heaven Premium Tour</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 30,800</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Package 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1585123388867-3bfe6dd4bdbf?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">7 Nights / 8 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Luxury Heritage Hotel Package</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 65,250</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Package" style="height: 220px;">
+                            <div class="position-absolute top-0 start-0 m-3 bg-white text-dark px-2 py-1 rounded fw-medium fs-7 shadow-sm">4 Nights / 5 Days</div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-dark mb-3">Flavours of the Valley</h5>
+                            <div class="d-flex justify-content-center align-items-center mt-3 text-muted">
+                                <span class="fs-4 fw-bold text-primary">₹ 17,700</span> <span class="ms-2">| Per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="packages.html" class="btn btn-outline-primary rounded-pill px-5 py-2 fw-medium">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Your Own Package -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-dark mb-4">Create Your Own Package!</h2>
+                    <p class="text-muted fs-5 mb-4">Unlock the freedom to design a travel experience that’s uniquely yours. With our custom tour packages, you can tailor every aspect of your journey—from destinations and accommodations to activities and dining.</p>
+                    <a href="custom-package.html" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow">Create Now</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-4 p-4 rounded-4 bg-light">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-4" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-map-location-dot fs-3"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Tailored Experiences</h4>
+                            <p class="text-muted mb-0">Customize or create your itinerary to suit your interests, whether it's adventure, relaxation, or cultural immersion.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start p-4 rounded-4 bg-light">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-4" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-headset fs-3"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Expert Guides</h4>
+                            <p class="text-muted mb-0">Confusion customizing the package? Let us call you and guide you through it!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="display-5 fw-bold text-dark">Travel Inspiration</h2>
+                    <p class="text-muted fs-5">Whether you’re looking for hidden gems, cultural experiences, or practical travel tips, our blog is your go-to resource for making the most of your tour packages and adventure. Dive in and get inspired for your next journey!</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover">
+                        <img src="https://images.unsplash.com/photo-1520635360276-857c6ab8df90?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Blog" style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-3"><a href="#" class="text-decoration-none text-dark hover-text-primary">Full Day Exploration</a></h5>
+                            <p class="text-muted small mb-0">Immerse yourself in a comprehensive day-long journey through the city's most iconic attractions. From historical landmarks and cultural sites to bustling markets and scenic spots...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Blog" style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-3"><a href="#" class="text-decoration-none text-dark hover-text-primary">Things to explore in Paradise</a></h5>
+                            <p class="text-muted small mb-0">A vibrant destination rich in history and cultural diversity. From its bustling markets and historic sites to the serene beaches, here are the top places you must not miss...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden transition-hover">
+                        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=600&q=80" class="card-img-top w-100 object-fit-cover" alt="Blog" style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-3"><a href="#" class="text-decoration-none text-dark hover-text-primary">A Guide to Cultural Delights</a></h5>
+                            <p class="text-muted small mb-0">Discover the local cuisine, vibrant festivals, and ancient traditions. Dive deep into the heart of the destination and experience it like a true local...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary rounded-pill px-5 py-2 fw-medium">View All Blogs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voices of Our Happy Travelers -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">Voices of Our Happy Travelers</h2>
+                <p class="text-muted fs-5">Read what our satisfied clients have to say about their unforgettable experiences with Rain Water Holidays.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded-4 border-start border-4 border-primary h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fst-italic text-muted mb-4">"Our trip with Rain Water Holidays was nothing short of magical. From the moment we landed to the day we bid farewell, every detail was meticulously planned and executed flawlessly. Thank you for making our vacation truly unforgettable!"</p>
+                        <h6 class="fw-bold mb-0 text-dark">- John D.</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded-4 border-start border-4 border-primary h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fst-italic text-muted mb-4">"Rain Water Holidays exceeded our expectations in every way possible. The professionalism, attention to detail, and warmth of the staff made us feel like royalty throughout our journey. We can't wait to book our next adventure with you!"</p>
+                        <h6 class="fw-bold mb-0 text-dark">- Sarah M.</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded-4 border-start border-4 border-primary h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fst-italic text-muted mb-4">"I've traveled extensively, but my experience with Rain Water Holidays stands out as one of the best. From the stunning destinations to the knowledgeable guides, every aspect of the trip was top-notch. Highly recommend them to anyone!"</p>
+                        <h6 class="fw-bold mb-0 text-dark">- Michael T.</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded-4 border-start border-4 border-primary h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fst-italic text-muted mb-4">"As a frequent traveler, I can confidently say that Rain Water Holidays sets the bar high when it comes to service excellence. Their dedication to customer satisfaction is truly commendable, and I wouldn't hesitate to book with them again in the future."</p>
+                        <h6 class="fw-bold mb-0 text-dark">- Emily R.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">Got Questions? We've Got Answers!</h2>
+                <p class="text-muted fs-5">Explore our Frequently Asked Questions to find quick and helpful answers to common queries about our tour packages, booking process, customization options, and more.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush bg-white rounded-4 shadow-sm" id="faqAccordion">
+                        <div class="accordion-item border-0 rounded-4 mb-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    1. How do I book a tour package?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    You can easily book a tour package through our website. Simply browse our available packages, select your preferred options, and follow the booking prompts. If you need assistance, our customer service team is here to help.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-4 mb-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    2. Can I customize my travel itinerary?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    Absolutely! We specialize in creating personalized travel experiences. Contact us with your preferences, and we'll help you design a custom itinerary that fits your needs and interests.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-4 mb-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    3. What is included in your tour packages?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    Our tour packages typically include accommodations, guided tours, transportation within the destination, and some meals. Specific inclusions vary by package, so please check the details of each package for more information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-4 mb-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    4. How can I make payments for my booking?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    We accept a variety of payment methods, including credit/debit cards, bank transfers, and online payment platforms. Payment details will be provided during the booking process.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-4 mb-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    5. What is your refund and cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    Our refund and cancellation policy varies by package and booking conditions. Detailed information is provided during the booking process and in your confirmation email. Please contact us as soon as possible if you need to cancel or modify your booking.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4 fw-bold text-dark px-4 py-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    6. How can I contact customer support?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 text-muted">
+                                    You can reach our customer support team through our website's contact form, by email, or by phone. Our team is available to assist you with any questions or concerns you may have before, during, or after your trip.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 mb-5">
+                <!-- Address Section like Coastline -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 pe-lg-5">
+                    <a href="index.html" class="d-inline-flex align-items-center text-white text-decoration-none fs-3 fw-bold mb-4">
+                        <i class="fa-solid fa-umbrella-beach text-primary me-2"></i>Rain Water
+                    </a>
+                    <p class="text-white-50 mb-4 lh-lg">Rain Water Holidays (P) Ltd<br>Opp : Kairali Appartments,<br>Wanderlust City, 10001</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="bg-white bg-opacity-10 text-white rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 45px; height: 45px;"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                        <a href="#" class="bg-white bg-opacity-10 text-white rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 45px; height: 45px;"><i class="fa-brands fa-twitter fs-5"></i></a>
+                        <a href="#" class="bg-white bg-opacity-10 text-white rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 45px; height: 45px;"><i class="fa-brands fa-instagram fs-5"></i></a>
+                        <a href="#" class="bg-white bg-opacity-10 text-white rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 45px; height: 45px;"><i class="fa-brands fa-linkedin-in fs-5"></i></a>
+                    </div>
+                </div>
+                <!-- Page Links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white fw-bold mb-4 fs-5">Page</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3"><a href="about-us.html" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-chevron-right text-primary me-2 fs-7"></i>About Us</a></li>
+                        <li class="mb-3"><a href="services.html" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-chevron-right text-primary me-2 fs-7"></i>Services</a></li>
+                        <li class="mb-3"><a href="packages.html" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-chevron-right text-primary me-2 fs-7"></i>Packages</a></li>
+                        <li class="mb-3"><a href="custom-package.html" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-chevron-right text-primary me-2 fs-7"></i>Custom Itinerary</a></li>
+                    </ul>
+                </div>
+                <!-- Blog Links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white fw-bold mb-4 fs-5">Recent Posts</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-pen-nib text-primary me-2 fs-7"></i>Full Day Exploration</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none transition-all hover-text-white d-inline-block hover-translate-x"><i class="fa-solid fa-pen-nib text-primary me-2 fs-7"></i>Things to explore in Paradise</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-50 mt-4 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-white-50 mb-0">&copy; 2026 Designed & Developed By Rain Water Holidays</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-white-50 mb-0 small">
+                        <a href="#" class="text-white-50 text-decoration-none me-4 hover-text-white transition-all">Login</a>
+                        <a href="#" class="text-white-50 text-decoration-none me-4 hover-text-white transition-all">Sign Up</a>
+                        <a href="#" class="text-white-50 text-decoration-none me-4 hover-text-white transition-all">Forgot Password?</a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-text-white transition-all">Terms of Service and Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
