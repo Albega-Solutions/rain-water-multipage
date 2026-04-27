@@ -106,9 +106,21 @@ body {
 /* Dropdown Menu */
 .dropdown-menu {
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 0;
     padding: 10px 0;
     animation: fadeIn 0.3s ease;
+    top: 100% !important;
+    padding-top: 15px;
+}
+
+/* Add invisible padding above dropdown menu to prevent hover gap */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
 }
 
 .dropdown-item {

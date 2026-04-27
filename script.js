@@ -25,14 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Dropdown hover for desktop (Bootstrap 5 doesn't do hover by default)
     if (window.innerWidth > 991) {
+        let dropdownTimeout;
         document.querySelectorAll('.dropdown').forEach(function(dropdown) {
             dropdown.addEventListener('mouseenter', function() {
+                clearTimeout(dropdownTimeout);
                 this.querySelector('.dropdown-menu').classList.add('show');
                 this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'true');
             });
             dropdown.addEventListener('mouseleave', function() {
-                this.querySelector('.dropdown-menu').classList.remove('show');
-                this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+                const dropdownMenu = this.querySelector('.dropdown-menu');
+                const toggle = this.querySelector('.dropdown-toggle');
+                dropdownTimeout = setTimeout(function() {
+                    dropdownMenu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }, 150);
             });
         });
     }
