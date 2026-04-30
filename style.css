@@ -524,6 +524,9 @@ h6,
     margin-top: -40px;
     padding-top: 40px;
 }
+.footer .col-lg-3{
+    padding: 0 20px;
+}
 
 .social-icon {
     width: 45px;
